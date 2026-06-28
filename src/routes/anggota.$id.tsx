@@ -52,44 +52,47 @@ function MemberPage() {
           ← Kembali ke daftar anggota
         </Link>
 
-        {/* Profile */}
-        <section className="mt-6 grid gap-8 md:grid-cols-[260px_1fr] md:items-center">
-          <div
-            className="relative mx-auto aspect-[3/4] w-full max-w-[260px] overflow-hidden rounded-xl border border-border bg-muted"
-            style={{ backgroundImage: `url(${lontara})`, backgroundSize: "180px" }}
-          >
-            {member.photo ? (
-              <img src={member.photo} alt={member.name} className="h-full w-full object-cover" />
-            ) : (
-              <div className="flex h-full w-full items-center justify-center">
-                <div className="flex h-24 w-24 items-center justify-center rounded-full bg-primary text-3xl font-bold text-primary-foreground shadow-lg">
-                  {member.name
-                    .split(" ")
-                    .map((p: string) => p[0])
-                    .join("")
-                    .slice(0, 2)}
+        {/* Profile Header */}
+        <section className="relative mt-8 overflow-hidden rounded-3xl bg-card shadow-soft ring-1 ring-border/50">
+          <div className="grid md:grid-cols-[320px_1fr]">
+            <div
+              className="relative aspect-[4/5] overflow-hidden bg-muted md:aspect-auto md:h-full"
+              style={{ backgroundImage: `url(${lontara})`, backgroundSize: "180px" }}
+            >
+              {member.photo ? (
+                <img src={member.photo} alt={member.name} className="absolute inset-0 h-full w-full object-cover" />
+              ) : (
+                <div className="flex h-full w-full items-center justify-center">
+                  <div className="flex h-24 w-24 items-center justify-center rounded-full bg-primary text-3xl font-bold text-primary-foreground shadow-lg">
+                    {member.name
+                      .split(" ")
+                      .map((p: string) => p[0])
+                      .join("")
+                      .slice(0, 2)}
+                  </div>
                 </div>
-              </div>
-            )}
-          </div>
+              )}
+            </div>
 
-          <div>
-            <p className="text-xs uppercase tracking-widest text-accent">{member.role}</p>
-            <h1 className="mt-2 font-display text-4xl font-bold text-foreground">
-              {member.name}
-            </h1>
-            <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              {member.bio}
-            </p>
+            <div className="flex flex-col justify-center p-8 md:p-12">
+              <p className="text-xs font-bold uppercase tracking-widest text-primary">{member.role}</p>
+              <h1 className="mt-3 font-display text-4xl font-bold leading-tight text-foreground md:text-5xl">
+                {member.name}
+              </h1>
+              <div className="my-6 h-px w-12 bg-accent" />
+              <p className="max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
+                {member.bio}
+              </p>
+            </div>
           </div>
         </section>
 
         {/* PPT viewer */}
-        <section className="mt-12">
-          <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
+        <section className="mt-16">
+          <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
             <div>
-              <p className="text-xs uppercase tracking-widest text-accent">Presentasi</p>
-              <h2 className="mt-1 font-display text-2xl font-bold text-foreground">
+              <p className="text-xs font-bold uppercase tracking-widest text-primary">Presentasi</p>
+              <h2 className="mt-2 font-display text-2xl font-bold text-foreground md:text-3xl">
                 {member.pptTitle}
               </h2>
             </div>
@@ -97,14 +100,14 @@ function MemberPage() {
               <a
                 href={member.pptUrl}
                 download
-                className="inline-flex items-center rounded-md border border-border bg-card px-4 py-2 text-sm font-medium text-foreground transition hover:border-accent hover:text-accent"
+                className="inline-flex h-10 items-center rounded-md bg-accent px-6 text-sm font-bold text-accent-foreground shadow-sm transition duration-300 hover:-translate-y-0.5 hover:bg-accent/90"
               >
-                ⬇ Unduh PPT
+                Unduh Dokumen
               </a>
             )}
           </div>
 
-          <div className="overflow-hidden rounded-xl border border-border bg-card shadow-sm">
+          <div className="overflow-hidden rounded-2xl bg-card shadow-soft ring-1 ring-border/50">
             {embedUrl ? (
               <iframe
                 src={embedUrl}
@@ -142,18 +145,31 @@ function MemberPage() {
         </section>
 
         {/* Other members */}
-        <section className="mt-16">
-          <h3 className="font-display text-lg font-semibold text-foreground">Anggota lainnya</h3>
-          <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-4">
+        <section className="mt-24 border-t border-border/50 pt-16">
+          <div className="mb-8 text-center">
+            <h3 className="font-display text-2xl font-bold text-foreground">Jelajahi Anggota Lain</h3>
+          </div>
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
             {MEMBERS.filter((m) => m.id !== member.id).map((m) => (
               <Link
                 key={m.id}
                 to="/anggota/$id"
                 params={{ id: m.id }}
-                className="rounded-lg border border-border bg-card p-4 text-sm transition hover:border-accent hover:text-accent"
+                className="group flex flex-col items-center gap-4 rounded-2xl p-4 transition duration-300 hover:bg-muted/50"
               >
-                <p className="font-medium text-foreground">{m.name}</p>
-                <p className="mt-1 text-xs text-muted-foreground">{m.role}</p>
+                <div className="relative h-16 w-16 overflow-hidden rounded-full ring-2 ring-transparent transition duration-300 group-hover:ring-accent">
+                  {m.photo ? (
+                    <img src={m.photo} alt={m.name} className="h-full w-full object-cover" />
+                  ) : (
+                    <div className="flex h-full w-full items-center justify-center bg-primary/10 text-lg font-bold text-primary">
+                      {m.name.split(" ").map((p) => p[0]).join("").slice(0, 2)}
+                    </div>
+                  )}
+                </div>
+                <div className="text-center">
+                  <p className="font-display text-sm font-bold text-foreground transition group-hover:text-primary">{m.name}</p>
+                  <p className="mt-0.5 text-[10px] font-medium uppercase tracking-wider text-muted-foreground">{m.role}</p>
+                </div>
               </Link>
             ))}
           </div>

@@ -1,3 +1,9 @@
+import luckyPhoto from "@/assets/Lucky Darmawan - KPKP.png";
+import nurulPhoto from "@/assets/Nurul Mutmainnah - KPKP.jpeg";
+import aldiPhoto from "@/assets/Muhammad Aldi Alfatih - KPKP.png";
+import putriPhoto from "@/assets/Putri Nur Safna - RIRU.jpeg";
+import ivanPhoto from "@/assets/Ivan Betrandi - KPKW.jpeg";
+
 export type Member = {
   id: string;
   name: string;
@@ -15,6 +21,7 @@ export const MEMBERS: Member[] = [
     role: "Magang — KPKP",
     bio: "Fokus pada Koordinasi dan Pengembangan Komunikasi Publik di KPw BI Sulawesi Selatan.",
     pptTitle: "Laporan Magang — Lucky Darmawan",
+    photo: luckyPhoto,
   },
   {
     id: "anggota-2",
@@ -22,6 +29,7 @@ export const MEMBERS: Member[] = [
     role: "Magang — KPKP",
     bio: "Mendukung kegiatan Koordinasi dan Pengembangan Kebijakan Wilayah.",
     pptTitle: "Laporan Magang — Nurul Mutmainnah",
+    photo: nurulPhoto,
   },
   {
     id: "anggota-3",
@@ -29,6 +37,7 @@ export const MEMBERS: Member[] = [
     role: "Magang — KPKP",
     bio: "Riset, Implementasi, dan Pengembangan Unit pada Divisi RIRU.",
     pptTitle: "Laporan Magang — Muhammad Aldi Alfatih",
+    photo: aldiPhoto,
   },
   {
     id: "anggota-4",
@@ -36,6 +45,7 @@ export const MEMBERS: Member[] = [
     role: "Magang — KPKP",
     bio: "Mendukung program edukasi kebanksentralan dan komunikasi publik.",
     pptTitle: "Laporan Magang — Putri Nur Safna",
+    photo: putriPhoto,
   },
   {
     id: "anggota-5",
@@ -43,6 +53,7 @@ export const MEMBERS: Member[] = [
     role: "Magang — KPKW",
     bio: "Analisis ekonomi wilayah dan dukungan kebijakan kantor perwakilan.",
     pptTitle: "Laporan Magang — Ivan Betrandi",
+    photo: ivanPhoto,
   },
 ];
 
