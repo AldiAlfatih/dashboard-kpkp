@@ -93,7 +93,7 @@ function HomePage() {
             Magang di KPw BI Sulawesi Selatan
           </h2>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-muted-foreground">
-            Program magang ini dilaksanakan di Kantor Perwakilan Bank Indonesia Provinsi Sulawesi Selatan, dengan penempatan pada <strong>Kelompok Perumusan Kebijakan Provinsi (KPKP)</strong>. Fokus utama kegiatan mencakup <em>data analytics</em>, <em>data cleaning</em> menggunakan Python, pengembangan <em>dashboard</em> Power BI, serta riset data makroekonomi untuk mendukung perumusan kebijakan.
+            Program magang ini dilaksanakan di Kantor Perwakilan Bank Indonesia Provinsi Sulawesi Selatan, dengan penempatan lintas fungsi pada <strong>KPKP, KPKW, dan RIRU</strong>. Fokus utama kegiatan tim secara keseluruhan mencakup riset ekonomi regional, perumusan <em>advisory</em> pengembangan ekonomi, hingga pelaksanaan edukasi dan komunikasi kebijakan publik secara sinergis.
           </p>
           <div className="mt-8 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-semibold text-primary">
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -106,10 +106,10 @@ function HomePage() {
         {/* Aktivitas & Output Utama */}
         <div className="mx-auto mt-16 grid max-w-6xl gap-6 px-6 sm:grid-cols-2 lg:grid-cols-4">
           {[
-            { title: "Pengolahan & Analisis Data", desc: "Membersihkan dan menstrukturkan data mentah untuk mendukung analisis kebijakan yang presisi." },
-            { title: "Pengembangan Dashboard", desc: "Merancang visualisasi data interaktif untuk mempermudah pemantauan indikator kinerja dan anggaran." },
-            { title: "Riset Ekonomi Regional", desc: "Menganalisis dinamika makroekonomi wilayah untuk mendukung perumusan rekomendasi kebijakan." },
-            { title: "Edukasi & Komunikasi", desc: "Mendukung pelaksanaan edukasi kebanksentralan serta mengoptimalkan strategi komunikasi publik." }
+            { title: "Riset Ekonomi & Kebijakan", desc: "Menganalisis indikator makroekonomi dan isu strategis daerah untuk perumusan rekomendasi (KPKP)." },
+            { title: "Pengembangan Ekonomi", desc: "Memberikan dukungan analisis dan program pengembangan sektor riil serta UMKM daerah (KPKW)." },
+            { title: "Edukasi & Komunikasi Publik", desc: "Mendukung diseminasi informasi kebanksentralan dan strategi kehumasan kepada masyarakat (RIRU)." },
+            { title: "Sinergi & Kolaborasi", desc: "Berkolaborasi lintas kelompok dalam pengolahan data (termasuk dashboard & analytics), penyusunan laporan, dan penyelenggaraan *event* BI." }
           ].map((item, i) => (
             <div key={i} className="rounded-2xl bg-card p-6 shadow-sm ring-1 ring-border/50 transition duration-300 hover:-translate-y-1 hover:shadow-md">
               <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
@@ -188,7 +188,7 @@ function HomePage() {
               Momen Bersama
             </h2>
           </div>
-          <div className="grid gap-4 md:grid-cols-3 md:grid-rows-2">
+          <div className="grid gap-4 md:grid-cols-3 md:grid-rows-2 md:h-[500px]">
             {GROUP_PHOTOS.map((g, i) => (
               <figure
                 key={i}
@@ -210,6 +210,11 @@ function HomePage() {
                 </div>
               </figure>
             ))}
+          </div>
+          <div className="mt-12 text-center">
+            <Link to="/galeri" className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-8 text-sm font-bold text-primary-foreground shadow-soft transition hover:-translate-y-1 hover:shadow-lg">
+              Lihat Selengkapnya →
+            </Link>
           </div>
         </div>
       </section>
@@ -307,35 +312,6 @@ function HomePage() {
               </div>
             </div>
           </Link>
-
-          {/* Laporan Dokumentasi Magang */}
-          <div className="group mb-16 flex flex-col items-center gap-8 overflow-hidden rounded-[2rem] bg-card p-6 shadow-soft transition duration-500 hover:-translate-y-2 hover:shadow-xl md:flex-row md:p-10">
-            <div
-              className="flex aspect-video w-full shrink-0 items-center justify-center rounded-2xl md:h-64 md:w-auto md:aspect-[4/3]"
-              style={{
-                backgroundImage: `linear-gradient(135deg, oklch(0.380 0.134 256.8 / 0.92), oklch(0.295 0.099 255.5 / 0.85)), url(${lontara})`,
-                backgroundSize: "cover, 260px",
-                backgroundBlendMode: "multiply, normal"
-              }}
-            >
-              <div className="text-center text-white">
-                <span className="inline-block rounded-full bg-white/20 px-5 py-1.5 text-[10px] font-bold uppercase tracking-[0.3em] backdrop-blur-sm">
-                  Laporan
-                </span>
-              </div>
-            </div>
-            <div className="flex-1 py-4">
-              <h3 className="font-display text-2xl font-bold text-foreground md:text-4xl">
-                Dokumentasi Magang
-              </h3>
-              <p className="mt-6 text-sm leading-relaxed text-muted-foreground md:text-base">
-                Dokumentasi ringkas kegiatan, pembelajaran, dan output selama program magang di KPw BI Sulawesi Selatan.
-              </p>
-              <div className="mt-8 flex items-center text-sm font-bold tracking-wider text-muted-foreground">
-                (Akan ditambahkan)
-              </div>
-            </div>
-          </div>
 
           <div className="mb-6 flex items-center gap-4">
             <h3 className="font-display text-xl font-bold text-foreground">Insight Anggota Tim</h3>

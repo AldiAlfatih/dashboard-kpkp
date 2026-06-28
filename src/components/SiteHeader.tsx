@@ -16,9 +16,12 @@ export function SiteHeader() {
           <Link to="/" className="text-foreground/80 transition hover:text-accent">
             Beranda
           </Link>
-          <a href="#anggota" className="text-foreground/80 transition hover:text-accent">
+          <a href="/#anggota" className="text-foreground/80 transition hover:text-accent">
             Anggota
           </a>
+          <Link to="/galeri" className="text-foreground/80 transition hover:text-accent">
+            Galeri
+          </Link>
         </nav>
       </div>
     </header>
