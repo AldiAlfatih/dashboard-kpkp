@@ -16,6 +16,7 @@ export type Member = {
   learningExperience?: string[];
   learningImpact?: string[];
   policyInsight?: { title: string; desc: string; suggestions?: string[] };
+  kesanPesan?: string;
 };
 
 export const MEMBERS: Member[] = [

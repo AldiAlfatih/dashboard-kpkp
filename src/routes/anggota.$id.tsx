@@ -83,6 +83,14 @@ function MemberPage() {
               <p className="max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
                 {member.bio}
               </p>
+
+              {member.kesanPesan && (
+                <div className="mt-8 rounded-2xl bg-primary/5 p-6 border-l-4 border-primary">
+                  <p className="text-sm font-medium italic text-primary/80 md:text-base leading-relaxed">
+                    "{member.kesanPesan}"
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </section>

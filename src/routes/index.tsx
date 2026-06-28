@@ -281,9 +281,10 @@ function HomePage() {
           </div>
 
           {/* Learning Insight Tim */}
-          <Link
-            to="/anggota/$id"
-            params={{ id: COMBINED.id }}
+          <a
+            href="https://canva.link/v3sbbos42qca586"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group mb-6 flex flex-col items-center gap-8 overflow-hidden rounded-[2rem] bg-card p-6 shadow-soft transition duration-500 hover:-translate-y-2 hover:shadow-xl md:flex-row md:p-10"
           >
             <div
@@ -311,7 +312,7 @@ function HomePage() {
                 Buka Dokumen →
               </div>
             </div>
-          </Link>
+          </a>
 
           <div className="mb-6 flex items-center gap-4">
             <h3 className="font-display text-xl font-bold text-foreground">Insight Anggota Tim</h3>
