@@ -87,60 +87,116 @@ function MemberPage() {
           </div>
         </section>
 
-        {/* PPT viewer */}
+        {/* Insight Viewer */}
         <section className="mt-16">
           <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
             <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-primary">Presentasi</p>
+              <p className="text-xs font-bold uppercase tracking-widest text-primary">Kontribusi Tim</p>
               <h2 className="mt-2 font-display text-2xl font-bold text-foreground md:text-3xl">
-                {member.pptTitle}
+                Insight & Pembelajaran
               </h2>
             </div>
-            {member.pptUrl && (
-              <a
-                href={member.pptUrl}
-                download
-                className="inline-flex h-10 items-center rounded-md bg-accent px-6 text-sm font-bold text-accent-foreground shadow-sm transition duration-300 hover:-translate-y-0.5 hover:bg-accent/90"
-              >
-                Unduh Dokumen
-              </a>
-            )}
           </div>
 
-          <div className="overflow-hidden rounded-2xl bg-card shadow-soft ring-1 ring-border/50">
-            {embedUrl ? (
-              <iframe
-                src={embedUrl}
-                title={member.pptTitle}
-                className="aspect-video w-full"
-                frameBorder={0}
-                allowFullScreen
-              />
-            ) : (
-              <div
-                className="flex aspect-video flex-col items-center justify-center gap-3 p-8 text-center"
-                style={{
-                  backgroundImage: `linear-gradient(135deg, oklch(0.36 0.07 45 / 0.92), oklch(0.55 0.11 50 / 0.85)), url(${lontara})`,
-                  backgroundSize: "cover, 240px",
-                }}
-              >
-                <div className="rounded-full bg-primary-foreground/15 px-4 py-1 text-xs uppercase tracking-widest text-primary-foreground">
-                  Pratinjau
+          {member.activities && member.activities.length > 0 ? (
+            <div className="space-y-16">
+              <div>
+                <div className="mb-6 flex items-center gap-4">
+                  <h3 className="font-display text-xl font-bold text-foreground">Aktivitas Utama</h3>
+                  <div className="h-px flex-1 bg-border/80" />
                 </div>
-                <p className="font-display text-2xl font-semibold text-primary-foreground">
-                  PPT belum diunggah
-                </p>
-                <p className="max-w-md text-sm text-primary-foreground/80">
-                  Slide presentasi akan tampil di sini setelah berkas .pptx atau .pdf disematkan
-                  pada data anggota.
-                </p>
+                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  {member.activities.map((act, i) => (
+                    <div key={i} className="rounded-2xl bg-card p-5 shadow-sm ring-1 ring-border/50 transition hover:-translate-y-1 hover:shadow-md">
+                      <h4 className="font-display text-sm font-bold text-foreground">{act.title}</h4>
+                      <p className="mt-2 text-xs text-muted-foreground">{act.desc}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
-            )}
-          </div>
 
-          <p className="mt-3 text-xs text-muted-foreground">
-            Slide ditampilkan menggunakan Office Online Viewer. Tombol unduh tersedia di pojok
-            kanan atas viewer.
+              <div className="grid gap-6 md:grid-cols-2">
+                {member.learningExperience && (
+                  <div className="rounded-[2rem] bg-card p-8 shadow-soft">
+                    <h3 className="font-display text-xl font-bold text-foreground mb-6">Learning Experience</h3>
+                    <ul className="space-y-3 text-sm text-muted-foreground">
+                      {member.learningExperience.map((exp, i) => (
+                        <li key={i} className="flex gap-3"><span className="text-primary">✦</span> {exp}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                {member.learningImpact && (
+                  <div className="rounded-[2rem] bg-primary p-8 text-primary-foreground shadow-soft">
+                    <h3 className="font-display text-xl font-bold mb-6">Learning Impact</h3>
+                    <ul className="space-y-3 text-sm text-primary-foreground/90">
+                      {member.learningImpact.map((imp, i) => (
+                        <li key={i} className="flex gap-3"><span className="text-accent">✦</span> {imp}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+
+              {member.policyInsight && (
+                <div className="rounded-3xl border border-border bg-card p-8 shadow-soft md:p-12">
+                  <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">Insight Kebijakan</p>
+                  <h3 className="mt-2 font-display text-2xl font-bold text-foreground md:text-3xl">
+                    {member.policyInsight.title}
+                  </h3>
+                  <p className="mt-6 text-sm leading-relaxed text-muted-foreground md:text-base">
+                    {member.policyInsight.desc}
+                  </p>
+                  {member.policyInsight.suggestions && (
+                    <>
+                      <div className="my-8 h-px w-full bg-border" />
+                      <h4 className="font-display text-lg font-bold text-foreground">Saran Improvement</h4>
+                      <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                        {member.policyInsight.suggestions.map((sug, i) => (
+                          <div key={i} className="flex items-start gap-3 rounded-xl bg-muted/50 p-4 text-sm text-muted-foreground">
+                            <span className="mt-0.5 text-primary">☑</span> {sug}
+                          </div>
+                        ))}
+                      </div>
+                    </>
+                  )}
+                </div>
+              )}
+            </div>
+          ) : (
+            <div className="overflow-hidden rounded-2xl bg-card shadow-soft ring-1 ring-border/50">
+              {embedUrl ? (
+                <iframe
+                  src={embedUrl}
+                  title={`Insight ${member.name}`}
+                  className="aspect-video w-full"
+                  frameBorder={0}
+                  allowFullScreen
+                />
+              ) : (
+                <div
+                  className="flex aspect-video flex-col items-center justify-center gap-3 p-8 text-center"
+                  style={{
+                    backgroundImage: `linear-gradient(135deg, oklch(0.36 0.07 45 / 0.92), oklch(0.55 0.11 50 / 0.85)), url(${lontara})`,
+                    backgroundSize: "cover, 240px",
+                  }}
+                >
+                  <div className="rounded-full bg-primary-foreground/15 px-4 py-1 text-xs uppercase tracking-widest text-primary-foreground">
+                    Pratinjau
+                  </div>
+                  <p className="font-display text-2xl font-semibold text-primary-foreground">
+                    Insight belum tersedia
+                  </p>
+                  <p className="max-w-md text-sm text-primary-foreground/80">
+                    Ringkasan kontribusi dan <i>learning experience</i> {member.name} akan ditampilkan di sini.
+                  </p>
+                </div>
+              )}
+            </div>
+          )}
+
+          <p className="mt-8 text-xs text-muted-foreground">
+            Halaman ini memuat ringkasan pembelajaran individu yang menjadi bagian dari dokumen utama Learning Insight Kelompok.
           </p>
         </section>
 
