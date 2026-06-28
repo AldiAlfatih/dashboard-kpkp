@@ -106,22 +106,24 @@ function MemberPage() {
             </div>
           </div>
 
-          {member.activities && member.activities.length > 0 ? (
+          {member.activities?.length || member.learningExperience?.length || member.learningImpact?.length || member.policyInsight ? (
             <div className="space-y-16">
-              <div>
-                <div className="mb-6 flex items-center gap-4">
-                  <h3 className="font-display text-xl font-bold text-foreground">Aktivitas Utama</h3>
-                  <div className="h-px flex-1 bg-border/80" />
+              {member.activities && member.activities.length > 0 && (
+                <div>
+                  <div className="mb-6 flex items-center gap-4">
+                    <h3 className="font-display text-xl font-bold text-foreground">Aktivitas Utama</h3>
+                    <div className="h-px flex-1 bg-border/80" />
+                  </div>
+                  <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    {member.activities.map((act, i) => (
+                      <div key={i} className="rounded-2xl bg-card p-5 shadow-sm ring-1 ring-border/50 transition hover:-translate-y-1 hover:shadow-md">
+                        <h4 className="font-display text-sm font-bold text-foreground">{act.title}</h4>
+                        <p className="mt-2 text-xs text-muted-foreground">{act.desc}</p>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                  {member.activities.map((act, i) => (
-                    <div key={i} className="rounded-2xl bg-card p-5 shadow-sm ring-1 ring-border/50 transition hover:-translate-y-1 hover:shadow-md">
-                      <h4 className="font-display text-sm font-bold text-foreground">{act.title}</h4>
-                      <p className="mt-2 text-xs text-muted-foreground">{act.desc}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
+              )}
 
               <div className="grid gap-6 md:grid-cols-2">
                 {member.learningExperience && (

@@ -9,7 +9,7 @@ export function SiteHeader() {
           <img src={biLogo} alt="Logo Bank Indonesia" className="h-10 w-auto object-contain" />
           <div className="hidden h-6 w-px bg-border sm:block" />
           <p className="hidden font-display text-base font-semibold text-foreground sm:block">
-            Dokumentasi Magang
+            Internship Triwulan 2 - 2026
           </p>
         </Link>
         <nav className="hidden gap-6 text-sm sm:flex">
@@ -30,7 +30,7 @@ export function SiteHeader() {
 
 export function SiteFooter() {
   return (
-    <footer className="mt-24 border-t border-border bg-primary/5">
+    <footer className="border-t border-border bg-primary/5">
       <div className="mx-auto max-w-6xl px-6 py-8 text-center text-xs text-muted-foreground">
         © {new Date().getFullYear()} Dokumentasi Magang · KPw Bank Indonesia Sulawesi Selatan
         <p className="mt-1 italic">@Anak Magang KPKP-KPKW-RIRU TW2 - 2026</p>

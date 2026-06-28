@@ -166,13 +166,16 @@ function HomePage() {
             <p className="mt-2 text-sm text-muted-foreground">Sebagai masukan konstruktif untuk memfasilitasi program magang yang lebih optimal di masa mendatang:</p>
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
               <div className="flex items-start gap-3 rounded-xl bg-muted/50 p-4 text-sm">
-                <span className="mt-0.5 text-primary">☑</span> Modul <i>onboarding</i> terpusat untuk memperkenalkan struktur dan alur kerja masing-masing kelompok secara ringkas.
+                <span className="mt-0.5 shrink-0 text-primary">☑</span>
+                <p className="leading-relaxed">Modul <i>onboarding</i> terpusat untuk memperkenalkan struktur dan alur kerja masing-masing kelompok secara ringkas.</p>
               </div>
               <div className="flex items-start gap-3 rounded-xl bg-muted/50 p-4 text-sm">
-                <span className="mt-0.5 text-primary">☑</span> Sesi <i>knowledge sharing</i> berkala antar anak magang lintas fungsi/kelompok.
+                <span className="mt-0.5 shrink-0 text-primary">☑</span>
+                <p className="leading-relaxed">Sesi <i>knowledge sharing</i> berkala antar anak magang lintas fungsi/kelompok.</p>
               </div>
               <div className="flex items-start gap-3 rounded-xl bg-muted/50 p-4 text-sm">
-                <span className="mt-0.5 text-primary">☑</span> Penyediaan bank data atau <i>knowledge base</i> ringan berisi panduan standar <i>tools</i> esensial bagi unit operasional teknis.
+                <span className="mt-0.5 shrink-0 text-primary">☑</span>
+                <p className="leading-relaxed">Penyediaan bank data atau <i>knowledge base</i> ringan berisi panduan standar <i>tools</i> esensial bagi unit operasional teknis.</p>
               </div>
             </div>
           </div>
@@ -398,7 +401,7 @@ function HomePage() {
         <div className="mx-auto max-w-4xl px-6">
           <h2 className="font-display text-3xl font-bold md:text-4xl">Terima Kasih</h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-primary-foreground/90 md:text-xl">
-            Terima kasih kepada <strong>Kantor Perwakilan Bank Indonesia Provinsi Sulawesi Selatan</strong>, khususnya unit <strong>KPKP</strong>, atas kesempatan, bimbingan, dan pengalaman berharga selama program magang. Pengalaman ini menjadi ruang belajar penting untuk memahami bagaimana data, analisis, dan kebijakan saling terhubung dalam mendukung perekonomian daerah.
+            Terima kasih kepada <strong>Kantor Perwakilan Bank Indonesia Provinsi Sulawesi Selatan</strong>, khususnya unit <strong>KPKP, KPKW, dan RIRU</strong>, atas kesempatan, bimbingan, dan pengalaman berharga selama program magang. Pengalaman ini menjadi ruang belajar penting untuk memahami bagaimana data, analisis, dan kebijakan saling terhubung dalam mendukung perekonomian daerah.
           </p>
         </div>
       </section>
