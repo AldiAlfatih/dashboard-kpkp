@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { MEMBERS, getMember } from "@/lib/members";
+import { MEMBERS, getMember, type Member } from "@/lib/members";
 import { SiteHeader, SiteFooter } from "@/components/SiteHeader";
 import lontara from "@/assets/lontara-pattern.jpg";
 
@@ -35,7 +35,7 @@ export const Route = createFileRoute("/anggota/$id")({
 });
 
 function MemberPage() {
-  const { member } = Route.useLoaderData();
+  const { member } = Route.useLoaderData() as { member: Member };
   const embedUrl = member.pptUrl
     ? `https://view.officeapps.live.com/op/embed.aspx?src=${encodeURIComponent(member.pptUrl)}`
     : null;

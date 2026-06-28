@@ -50,7 +50,7 @@ function HomePage() {
           
           {/* Subtle Pattern Overlay */}
           <div
-            className="absolute inset-0 opacity-10 mix-blend-overlay"
+            className="absolute inset-0 opacity-[0.03] mix-blend-overlay"
             style={{ backgroundImage: `url(${lontara})`, backgroundSize: "320px" }}
           />
         </div>

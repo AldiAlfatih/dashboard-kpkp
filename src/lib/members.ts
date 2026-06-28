@@ -81,7 +81,7 @@ export const MEMBERS: Member[] = [
   {
     id: "anggota-4",
     name: "Putri Nur Safna",
-    role: "Magang — KPKP",
+    role: "Magang — RIRU",
     bio: "Mendukung program edukasi kebanksentralan dan komunikasi publik.",
     pptTitle: "Laporan Magang — Putri Nur Safna",
     photo: putriPhoto,
