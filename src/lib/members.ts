@@ -84,26 +84,24 @@ export const MEMBERS: Member[] = [
     activities: [
       { title: "Data Cleaning (Python)", desc: "Mengolah dan cleaning data menggunakan Python." },
       { title: "Dashboard Power BI", desc: "Membuat dashboard Power BI untuk mendukung monitoring informasi secara lebih terstruktur." },
-      { title: "Riset Makroekonomi", desc: "Melakukan riset makroekonomi dan sektoral wilayah Sulampua." },
-      { title: "Penyusunan TOR", desc: "Membantu menyusun TOR komoditas strategis sebagai dasar awal policy note." },
+      { title: "Penyusunan TOR", desc: "Membantu menyusun TOR komoditas strategis melalui pencarian data dan referensi pendukung sebagai dasar awal policy note." },
       { title: "Optimasi SharePoint", desc: "Mengoptimalkan Minisite BI Sulsel berbasis SharePoint." },
       { title: "Pengarsipan", desc: "Memahami terkait alur dan proses pengarsipan." }
     ],
     learningExperience: [
       "Mengolah dan cleaning data menggunakan Python.",
       "Membuat dashboard Power BI untuk mendukung monitoring informasi secara lebih terstruktur.",
-      "Melakukan riset makroekonomi dan sektoral wilayah Sulampua.",
-      "Membantu menyusun TOR komoditas strategis sebagai dasar awal policy note.",
+      "Membantu menyusun TOR komoditas strategis melalui pencarian data dan referensi pendukung sebagai dasar awal policy note.",
       "Mengoptimalkan Minisite BI Sulsel berbasis SharePoint.",
       "Memahami terkait alur dan proses pengarsipan."
     ],
     learningImpact: [
-      "Lebih Teliti Mengolah Data: Pengalaman data cleaning menggunakan Python membuat saya lebih teliti dalam membaca, membersihkan, dan menyiapkan data sebelum dianalisis.",
+      "Lebih Teliti Mengolah Data: pengalaman data cleaning menggunakan Python membuat saya lebih teliti dalam membaca, membersihkan, dan menyiapkan data sebelum dianalisis.",
       "Mampu Menyajikan Data Lebih Informatif: Melalui dashboard Power BI, saya belajar mengubah data menjadi visualisasi yang lebih terstruktur, mudah dipahami, dan komunikatif.",
       "Lebih Adaptif dengan Tools Profesional: Pengalaman menggunakan Python, Power BI, dan SharePoint meningkatkan kepercayaan diri saya dalam memanfaatkan tools digital di lingkungan kerja profesional.",
       "Memahami Analisis Ekonomi Regional: Riset makroekonomi dan sektoral wilayah Sulampua membuat saya lebih memahami bagaimana data digunakan untuk membaca kondisi ekonomi daerah.",
       "Memahami Dasar Penyusunan Policy Note: Penyusunan TOR komoditas strategis memberi saya pemahaman bahwa kebijakan membutuhkan dasar kajian, data, dan kerangka berpikir yang sistematis.",
-      "Memahami Kolaborasi dalam Ekonomi Regional: Kolaborasi dengan tim internal dan stakeholder membuat saya memahami pentingnya komunikasi, koordinasi, dan ketelitian dalam mendukung pengembangan ekonomi daerah."
+      "Memahami pentingnya komunikasi dan koordinasi kerja: Melalui proses kerja di KPKP, saya belajar bahwa analisis ekonomi daerah tidak hanya membutuhkan data, tetapi juga komunikasi, koordinasi, dan ketelitian."
     ],
     policyInsight: {
       title: "Penguatan Perumusan Kebijakan Berbasis Data untuk Stabilitas Ekonomi Regional",
