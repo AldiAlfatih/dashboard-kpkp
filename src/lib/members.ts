@@ -28,7 +28,11 @@ export const MEMBERS: Member[] = [
     pptTitle: "Laporan Magang — Lucky Darmawan",
     photo: luckyPhoto,
     learningExperience: [
-      "Selama mengikuti program magang di Kelompok Perumusan Kebijakan Ekonomi Daerah, saya memperoleh pengalaman yang tidak hanya bersifat administratif, tetapi juga memahami proses perumusan kebijakan ekonomi daerah yang berbasis data dan analisis."
+      "Selama mengikuti program magang di Kelompok Perumusan Kebijakan Ekonomi Daerah, saya memperoleh pengalaman yang tidak hanya bersifat administratif, tetapi juga memahami proses perumusan kebijakan ekonomi daerah yang berbasis data dan analisis.",
+      "Memahami proses penyusunan kajian ekonomi regional sebagai dasar pengambilan kebijakan Bank Indonesia.",
+      "Mempelajari bagaimana data ekonomi dikumpulkan, divalidasi, dan dianalisis sebelum digunakan sebagai rekomendasi kebijakan.",
+      "Mengikuti Focus Group Discussion (FGD), rapat koordinasi, serta diskusi dengan pemerintah daerah dan stakeholder terkait.",
+      "Mengembangkan kemampuan analisis data, komunikasi profesional, dan kerja tim."
     ],
     learningImpact: [
       "Memiliki pemahaman yang lebih komprehensif mengenai peran Bank Indonesia di daerah.",
@@ -45,11 +49,30 @@ export const MEMBERS: Member[] = [
   },
   {
     id: "anggota-2",
-    name: "Nurul Mutmainnah",
+    name: "Nurul Mutmainna",
     role: "Magang — KPKP",
     bio: "Mendukung kegiatan Koordinasi dan Pengembangan Kebijakan Wilayah.",
-    pptTitle: "Laporan Magang — Nurul Mutmainnah",
+    pptTitle: "Laporan Magang — Nurul Mutmainna",
     photo: nurulPhoto,
+    learningExperience: [
+      "Mendapatkan pengalaman berharga sebagai pengalaman pertama terjun dan merasakan langsung dunia kerja profesional.",
+      "Mempelajari proses penyusunan kebijakan, termasuk penyusunan Terms of Reference (ToR) penelitian mengenai komoditas kakao.",
+      "Meningkatkan kemampuan riset data melalui eksplorasi berbagai sumber informasi dan website baru seperti PIHPS.",
+      "Mempelajari sistem pengarsipan dokumen menggunakan portal internal Bank Indonesia (BIRMS).",
+      "Meningkatkan keterampilan editing dan visualisasi data dalam pembuatan bahan presentasi dan grafik."
+    ],
+    learningImpact: [
+      "Membentuk analytical mindset dengan lebih memahami bagaimana proses penyusunan kebijakan di Bank Indonesia dilakukan.",
+      "Melatih manajemen waktu, ketelitian, serta kecepatan bekerja dalam menyelesaikan tugas-tugas profesional.",
+      "Menumbuhkan semangat belajar dan rasa percaya diri yang tinggi dalam menghadapi tantangan baru di dunia kerja."
+    ],
+    activities: [
+      { title: "Penyusunan ToR Kebijakan", desc: "Membantu penyusunan Terms of Reference (ToR) penelitian mengenai komoditas kakao di Sulampua." },
+      { title: "Eksplorasi Sumber Data", desc: "Mencari berbagai data di berbagai website yang sebelumnya belum pernah dieksplor (Contoh: PIHPS)." },
+      { title: "Partisipasi Event KPKP", desc: "Berkesempatan mengikuti High Level Meeting Tim Pengendalian Inflasi Daerah (HLM TPID), FGD, dll." },
+      { title: "Pengarsipan (BIRMS)", desc: "Melakukan arsip dokumen menggunakan portal internal Bank Indonesia yakni BIRMS." },
+      { title: "Pembuatan Materi & Editing", desc: "Membantu membuat bahan presentasi, grafik, sekaligus menambah informasi dari bahan materi." }
+    ]
   },
   {
     id: "anggota-3",
@@ -59,28 +82,28 @@ export const MEMBERS: Member[] = [
     pptTitle: "Insight: Muhammad Aldi Alfatih",
     photo: aldiPhoto,
     activities: [
-      { title: "Data Cleaning dengan Python", desc: "Membersihkan dan menyiapkan data agar lebih siap digunakan dalam proses analisis." },
-      { title: "Dashboard Prognosa Anggaran", desc: "Membantu menyajikan informasi monitoring secara lebih terstruktur melalui visualisasi data Power BI." },
-      { title: "Riset Makroekonomi Sulampua", desc: "Mendukung pemahaman awal terhadap kondisi ekonomi wilayah Sulawesi, Maluku, dan Papua." },
-      { title: "TOR Komoditas Strategis", desc: "Menyusun kerangka acuan sebagai dasar awal penyusunan catatan kebijakan (policy note)." },
-      { title: "Revamping Minisite BI Sulsel", desc: "Mengoptimalkan tampilan dan akses informasi internal melalui perbaikan antarmuka SharePoint." },
-      { title: "Kolaborasi Ekonomi Regional", desc: "Berkolaborasi dengan tim internal dan stakeholder untuk mendukung inisiatif pengembangan ekonomi." }
+      { title: "Data Cleaning (Python)", desc: "Mengolah dan cleaning data menggunakan Python." },
+      { title: "Dashboard Power BI", desc: "Membuat dashboard Power BI untuk mendukung monitoring informasi secara lebih terstruktur." },
+      { title: "Riset Makroekonomi", desc: "Melakukan riset makroekonomi dan sektoral wilayah Sulampua." },
+      { title: "Penyusunan TOR", desc: "Membantu menyusun TOR komoditas strategis sebagai dasar awal policy note." },
+      { title: "Optimasi SharePoint", desc: "Mengoptimalkan Minisite BI Sulsel berbasis SharePoint." },
+      { title: "Pengarsipan", desc: "Memahami terkait alur dan proses pengarsipan." }
     ],
     learningExperience: [
-      "Memahami pentingnya data cleaning sebelum proses analisis dan visualisasi.",
-      "Belajar menggunakan Python untuk membantu pengolahan data secara lebih rapi dan efisien.",
-      "Memahami bagaimana dashboard Power BI dapat membantu menyajikan informasi secara lebih terstruktur.",
-      "Mendapat pemahaman awal tentang analisis makroekonomi dan sektoral di wilayah Sulampua.",
-      "Belajar bahwa TOR dan policy note membutuhkan kerangka berpikir yang sistematis, berbasis data, dan relevan dengan kebutuhan daerah.",
-      "Memahami bagaimana platform internal seperti SharePoint dapat membantu efisiensi akses informasi."
+      "Mengolah dan cleaning data menggunakan Python.",
+      "Membuat dashboard Power BI untuk mendukung monitoring informasi secara lebih terstruktur.",
+      "Melakukan riset makroekonomi dan sektoral wilayah Sulampua.",
+      "Membantu menyusun TOR komoditas strategis sebagai dasar awal policy note.",
+      "Mengoptimalkan Minisite BI Sulsel berbasis SharePoint.",
+      "Memahami terkait alur dan proses pengarsipan."
     ],
     learningImpact: [
-      "Menjadi lebih teliti dalam membaca, membersihkan, dan mengolah data.",
-      "Lebih percaya diri menggunakan tools seperti Python, Power BI, dan SharePoint dalam konteks kerja profesional.",
-      "Lebih memahami hubungan antara data, analisis, visualisasi, dan proses perumusan kebijakan.",
-      "Lebih mampu mengubah data menjadi insight yang komunikatif.",
-      "Lebih memahami budaya kerja profesional, kolaboratif, dan berbasis ketelitian di lingkungan bank sentral.",
-      "Lebih sadar bahwa pekerjaan berbasis data bukan hanya soal angka, tetapi juga tentang bagaimana data dapat mendukung keputusan yang berdampak."
+      "Lebih Teliti Mengolah Data: Pengalaman data cleaning menggunakan Python membuat saya lebih teliti dalam membaca, membersihkan, dan menyiapkan data sebelum dianalisis.",
+      "Mampu Menyajikan Data Lebih Informatif: Melalui dashboard Power BI, saya belajar mengubah data menjadi visualisasi yang lebih terstruktur, mudah dipahami, dan komunikatif.",
+      "Lebih Adaptif dengan Tools Profesional: Pengalaman menggunakan Python, Power BI, dan SharePoint meningkatkan kepercayaan diri saya dalam memanfaatkan tools digital di lingkungan kerja profesional.",
+      "Memahami Analisis Ekonomi Regional: Riset makroekonomi dan sektoral wilayah Sulampua membuat saya lebih memahami bagaimana data digunakan untuk membaca kondisi ekonomi daerah.",
+      "Memahami Dasar Penyusunan Policy Note: Penyusunan TOR komoditas strategis memberi saya pemahaman bahwa kebijakan membutuhkan dasar kajian, data, dan kerangka berpikir yang sistematis.",
+      "Memahami Kolaborasi dalam Ekonomi Regional: Kolaborasi dengan tim internal dan stakeholder membuat saya memahami pentingnya komunikasi, koordinasi, dan ketelitian dalam mendukung pengembangan ekonomi daerah."
     ],
     policyInsight: {
       title: "Penguatan Perumusan Kebijakan Berbasis Data untuk Stabilitas Ekonomi Regional",
@@ -100,13 +123,22 @@ export const MEMBERS: Member[] = [
     pptTitle: "Laporan Magang — Putri Nur Safna",
     photo: putriPhoto,
     learningExperience: [
-      "Memahami peran strategis Bank Indonesia dalam mendorong investasi daerah dan pertumbuhan ekonomi regional, melalui program yang mendukung peningkatan kemampuan UMKM.",
-      "Mengembangkan kemampuan analisis data ekonomi, investasi, serta potensi unggulan daerah sebagai dasar penyusunan keputusan daerah.",
-      "Meningkatkan kompetensi dalam penyusunan Presentation Book Q2 menggunakan power point, administrasi, dan penyusunan dokumen arsip."
+      "Berkontribusi dalam penyusunan Presentation Book Q2 dan pengarsipan dokumen.",
+      "Mengumpulkan dan merekap data harga serta ketersediaan pangan dari Bapanas dan instansi Ketahanan Pangan sebagai bahan analisis.",
+      "Membantu mengolah dan memvalidasi data pangan untuk mendukung penyusunan laporan inflasi dan asesmen ekonomi daerah, seperti mengambil data mentah dari website menggunakan teknik scrapping machine learning.",
+      "Menyusun bahan presentasi dan ringkasan informasi terkait perkembangan harga pangan strategis.",
+      "Membantu penyusunan notulen dan dokumentasi hasil rapat koordinasi dengan Bapanas, Ketahanan Pangan, dan TPID.",
+      "Mendukung penyusunan laporan berkala mengenai perkembangan komoditas pangan strategis.",
+      "Mengarsipkan dokumen, data, dan surat menyurat divisi KPKP-RIRU.",
+      "Membantu menyiapkan bahan pendukung kegiatan koordinasi dan rapat bersama pemangku kepentingan.",
+      "Melakukan pencarian data dan referensi sebagai pendukung analisis kondisi pangan dan inflasi daerah."
     ],
     learningImpact: [
-      "Memperkuat kemampuan mengolah, memvalidasi, dan menyajikan data secara sistematis dan akurat.",
-      "Memahami proses koordinasi lintas instansi seperti Bapanas, dan stakeholder lainnya dalam mendukung pengolaan data dan percepatan realisasi proyek investasi.",
+      "Menjadi jauh lebih memahami peran strategis Bank Indonesia dalam mendorong investasi daerah dan pertumbuhan ekonomi regional, melalui program yang mendukung peningkatan kemampuan UMKM.",
+      "Mengembangkan kemampuan analisis data ekonomi, investasi, serta potensi unggulan daerah sebagai dasar penyusunan keputusan daerah.",
+      "Meningkatkan kompetensi dalam penyusunan Presentation Book Q2 menggunakan power point, administrasi, dan penyusunan dokumen arsip.",
+      "Memperkuat kemampuan saya dalam mengolah, memvalidasi, dan menyajikan data secara sistematis dan akurat.",
+      "Memahami proses koordinasi lintas instansi seperti bapanas, dan stakeholder lainnya dalam mendukung pengolaan data dan percepatan realisasi proyek investasi.",
       "Mengasah keterampilan komunikasi profesional, manajemen waktu, problem solving, serta kolaborasi dalam lingkungan kerja yang dinamis."
     ],
     activities: [
@@ -128,15 +160,17 @@ export const MEMBERS: Member[] = [
     bio: "Analisis ekonomi wilayah dan dukungan kebijakan kantor perwakilan.",
     pptTitle: "Laporan Magang — Ivan Betrandi",
     photo: ivanPhoto,
-    kesanPesan: "Ini merupakan pengalaman magang dan kerja pertama saya di lingkungan korporat, yang memberikan kesan sangat positif. Kampanye Cinta, Bangga, dan Paham (CBP) Rupiah menjadi salah satu momen yang paling berkesan selama saya berada di BI.",
     learningExperience: [
-      "Mengaplikasikan ilmu yang dipelajari selama perkuliahan, seperti web development dan web scraping, secara langsung di dunia kerja.",
-      "Memperoleh pengetahuan baru mengenai teknologi dan sistem yang digunakan di KPw Bank Indonesia Sulawesi Selatan.",
-      "Mendapatkan pengalaman praktis dan wawasan mendalam mengenai proses pengarsipan dokumen dan persiapan audit."
+      "Merupakan magang pertama dan merasakan bekerja di lingkungan korporat",
+      "Semua ilmu yang dipelajari selama perkuliahan seperti web development dan scraping web dipakai selama magang",
+      "Memperoleh pengetahuan baru mengenai teknologi yang digunakan di KPw Bank Indonesia Sulawesi Selatan",
+      "Mendapatkan pengalaman baru dalam proses pengarsipan dokumen dan persiapan audit"
     ],
     learningImpact: [
-      "Berhasil beradaptasi dan meningkatkan kemampuan problem solving setelah sempat merasa kesulitan memahami data, angka, dan istilah ekonomi yang belum familiar.",
-      "Memperoleh wawasan baru yang komprehensif mengenai berbagai kebijakan Bank Indonesia di daerah."
+      "Sempat merasa kesulitan karena harus memahami data, angka, dan istilah yang belum familiar",
+      "Lingkungan kerja di Bank Indonesia memberikan kesan yang sangat positif",
+      "Kampanye Cinta, Bangga, dan Paham (CBP) Rupiah menjadi salah satu hal yang berkesan selama magang",
+      "Memperoleh wawasan baru mengenai beberapa kebijakan Bank Indonesia"
     ],
     activities: [
       { title: "Pengembangan & Scraping Web", desc: "Memanfaatkan keahlian teknis perkuliahan untuk mendukung pengumpulan data dan pengembangan sistem informasi." },

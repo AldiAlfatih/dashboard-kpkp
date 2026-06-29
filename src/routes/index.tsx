@@ -154,28 +154,45 @@ function HomePage() {
           <div className="mb-12 text-center">
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary">Insight Kebijakan</p>
             <h2 className="mt-3 font-display text-3xl font-bold text-foreground md:text-4xl">
-              Dukungan Analisis untuk Pertumbuhan Regional
+              Implementasi Kebijakan Bank Indonesia KPw Sulawesi Selatan
             </h2>
           </div>
           <div className="rounded-3xl border border-border bg-card p-8 shadow-soft md:p-12">
-            <p className="text-base leading-relaxed text-muted-foreground md:text-lg">
-              Selama program magang ini, tim berkesempatan memahami langsung operasional berbagai kebijakan Bank Indonesia, mulai dari pengendalian inflasi daerah, riset ekonomi makro sektoral, hingga komunikasi dan edukasi kebanksentralan. Proses kolaborasi lintas kelompok ini menyadarkan kami bahwa setiap kebijakan publik harus didukung oleh pengolahan data yang kuat, komunikasi yang efektif, dan kolaborasi sinergis antar pemangku kepentingan untuk mencapai stabilitas ekonomi regional yang berkelanjutan.
-            </p>
+            <h3 className="mb-4 font-display text-xl font-bold text-foreground">Pengendalian Inflasi Daerah Melalui TPID</h3>
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div className="flex items-start gap-3 rounded-xl bg-primary/5 p-4 text-sm">
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground">1</span>
+                <p className="leading-relaxed">Koordinasi aktif bersama Pemerintah Provinsi dan Kabupaten/Kota dalam Tim Pengendalian Inflasi Daerah (TPID).</p>
+              </div>
+              <div className="flex items-start gap-3 rounded-xl bg-primary/5 p-4 text-sm">
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground">2</span>
+                <p className="leading-relaxed">Penyusunan kajian dan rekomendasi kebijakan berdasarkan perkembangan inflasi daerah.</p>
+              </div>
+              <div className="flex items-start gap-3 rounded-xl bg-primary/5 p-4 text-sm">
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground">3</span>
+                <p className="leading-relaxed">Pelaksanaan <i>High Level Meeting</i> TPID sebagai forum koordinasi antar pemangku kepentingan.</p>
+              </div>
+              <div className="flex items-start gap-3 rounded-xl bg-primary/5 p-4 text-sm">
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground">4</span>
+                <p className="leading-relaxed">Edukasi serta sinergi program Gerakan Nasional Pengendalian Inflasi Pangan (GNPIP) untuk menjaga ketersediaan pasokan pangan.</p>
+              </div>
+            </div>
+
             <div className="my-8 h-px w-full bg-border" />
             <h3 className="font-display text-xl font-bold text-foreground">Saran Improvement</h3>
             <p className="mt-2 text-sm text-muted-foreground">Sebagai masukan konstruktif untuk memfasilitasi program magang yang lebih optimal di masa mendatang:</p>
-            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            <div className="mt-6 flex flex-col gap-4">
               <div className="flex items-start gap-3 rounded-xl bg-muted/50 p-4 text-sm">
                 <span className="mt-0.5 shrink-0 text-primary">☑</span>
-                <p className="leading-relaxed">Modul <i>onboarding</i> terpusat untuk memperkenalkan struktur dan alur kerja masing-masing kelompok secara ringkas.</p>
+                <p className="leading-relaxed">Memperkuat Komunikasi dan Kebersamaan antara Pegawai dan Peserta Magang.</p>
               </div>
               <div className="flex items-start gap-3 rounded-xl bg-muted/50 p-4 text-sm">
                 <span className="mt-0.5 shrink-0 text-primary">☑</span>
-                <p className="leading-relaxed">Sesi <i>knowledge sharing</i> berkala antar anak magang lintas fungsi/kelompok.</p>
+                <p className="leading-relaxed">Menyelenggarakan sesi <i>knowledge sharing</i> secara berkala antar-divisi untuk memperkuat kolaborasi, berbagi pengalaman, dan meningkatkan kapasitas pegawai.</p>
               </div>
               <div className="flex items-start gap-3 rounded-xl bg-muted/50 p-4 text-sm">
                 <span className="mt-0.5 shrink-0 text-primary">☑</span>
-                <p className="leading-relaxed">Penyediaan bank data atau <i>knowledge base</i> ringan berisi panduan standar <i>tools</i> esensial bagi unit operasional teknis.</p>
+                <p className="leading-relaxed">Menambah personel atau fungsi khusus di bidang IT yang berfokus pada pengembangan dan integrasi <i>dashboard</i>, <i>website</i>, serta sistem informasi, sehingga pengelolaan data antar-divisi menjadi lebih terintegrasi, efisien, dan mendukung pengambilan keputusan berbasis data.</p>
               </div>
             </div>
           </div>
